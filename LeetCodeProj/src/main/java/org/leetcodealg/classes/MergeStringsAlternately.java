@@ -1,18 +1,22 @@
 package org.leetcodealg.classes;
 
 public class MergeStringsAlternately {
+    //    For OOP style writing code
+    //    private String word1;
+    //    private String word2;
+    //     public MergeStringsAlternately(){
+    //    }
+    //    public MergeStringsAlternately(String word1, String word2){
+    //        this.word1 = word1;
+    //        this.word2 = word2;
+    //    }
 
-//    For OOP style writing code
-//    private String word1;
-//    private String word2;
-//     public MergeStringsAlternately(){
-//    }
-//    public MergeStringsAlternately(String word1, String word2){
-//        this.word1 = word1;
-//        this.word2 = word2;
-//    }
-
-//  This solution worked in a 8ms and 42.6MB
+    //    This solution worked in a 8ms and 42.6MB
+    //    Complexity Analysis
+    //    Time complexity: O(m+n)
+    //    We iterate over word1 and word2 once pushing their letters into result. It would take O(m+n) time.
+    //    Space complexity: O(1)
+    //    Without considering the space consumed by the input strings (word1 and word2) and the output string (result), we do not use more than constant space.
     public static String mergeAlternately(String word1, String word2) {
         StringBuilder mergedAlternately = new StringBuilder();
 
@@ -27,7 +31,7 @@ public class MergeStringsAlternately {
         return mergedAlternately.toString();
     }
 
-//  This solution worked in a 0ms
+    //    This solution worked in a 0ms
     public static String mergeAlternatelySolutionLeetCode(String word1, String word2) {
         StringBuilder merged = new StringBuilder();
         int i = 0, j = 0;
